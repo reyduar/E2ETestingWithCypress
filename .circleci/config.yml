@@ -13,7 +13,7 @@ jobs:
         name: Install dependencies
         command: npm ci
     - run:
-        commands: npm cypress verify
+        command: npm cypress verify
     - save_cache:
         key: cache-{{ .Branch }}-{{ checksum "package.json" }}
         paths:
