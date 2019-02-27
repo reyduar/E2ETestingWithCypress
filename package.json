@@ -1,0 +1,17 @@
+{
+  "name": "ui-automation-tests",
+  "version": "1.0.0",
+  "description": "Cypress automation testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-web-app",
+    "test-web-app": "cypress run --project ./src/app",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "author": "TTT",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^3.1.5"
+  }
+}

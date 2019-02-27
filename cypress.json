@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://sacademico-app.herokuapp.com/#!/login",
+  "fixturesFolder": "src/app/cypress/fixtures",
+  "integrationFolder": "src/app/cypress/integration",
+  "pluginsFile": "src/app/cypress/plugins/index.js",
+  "screenshotsFolder": "src/app/cypress/screenshots",
+  "videosFolder": "src/app/cypress/videos",
+  "supportFile": "src/app/cypress/support/index.js",
+  "projectId": "52hqt8"
+}

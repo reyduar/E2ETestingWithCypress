@@ -1,0 +1,18 @@
+[{
+  "asserts": {
+    "login_label": "Recordarme",
+    "home_title": "Nueva Inscripción"
+  },
+  "elements": {
+    "input_username": "#usuario",
+    "input_password": "#password",
+    "button_login": "button[type=submit]",
+    "checkbox_label": ".pull-left",
+    "home_title": ".page-title",
+    "button_logout": ":nth-child(2) > .profile-pic"
+  },
+  "data": {
+    "email": "admin",
+    "password": "123"
+  }
+}]
