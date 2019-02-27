@@ -56,7 +56,7 @@ Run `npm run cypress:open` into app's directory then cypress will opened a dialo
 npm run cypress:open
 ```
 
-## Running All tests of social-influencer-ui group
+## Running All tests
 
 ```
 npm test
