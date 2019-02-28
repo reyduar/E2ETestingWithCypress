@@ -86,4 +86,16 @@ npm run test-aw
 
 - [Report output](https://18-172927535-gh.circle-artifacts.com/0/root/app/mochawesome-report/mochawesome.html)
 
-- Videos output [Login](https://18-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/videos/login/login.spec.js.mp4) [Home](https://18-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/videos/home/home.spec.js.mp4)
+- Videos output
+
+* [Login](https://18-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/videos/login/login.spec.js.mp4)
+* [Home](https://18-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/videos/home/home.spec.js.mp4)
+
+- [Screenshots fails tets](https://19-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/screenshots/home/home.spec.js/Tests%20para%20la%20pagina%20de%20Inicio%20%28%2B%20Nueva%20Inscripci%C3%B3n%29%20--%20Visitar%20la%20p%C3%A1gina%20de%20Nueva%20Inscripci%C3%B3n%20%28failed%29.png)
+
+## References
+
+- https://www.cypress.io/
+- https://onesoftwaretester.wordpress.com/2018/10/02/cypress-and-mochawesome/
+- https://deliciousbrains.com/cypress-testing/
+- https://github.com/cypress-io/cypress-example-docker-circle
