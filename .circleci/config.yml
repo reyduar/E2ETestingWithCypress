@@ -6,6 +6,12 @@ jobs:
     working_directory: ~/app   
     parallelism: 1
     steps:
+    - run:
+          name: Creating Dummy Artifacts
+          command: |
+            echo "my artifact file" > /junit-results;
+            mkdir /junit-results;
+            echo "my tests files in a dir" > /junit-results;
     - checkout
     - restore_cache:
        keys:
@@ -20,18 +26,11 @@ jobs:
         paths:
         - ~/.npm
         - ~/.cache
-    - persist_to_workspace:
-        root: ~/
-        paths:
-        - project
-        - .cache/Cypress
-    - attach_workspace:
-        at: ~/
     - run:
         name: Running E2E tests with JUnit reporter
         command: npm run test-junit
     - store_test_results:
-       path: junit-results
+       path: /junit-results
     - store_artifacts:
        path: cypress/videos
     - store_artifacts:
