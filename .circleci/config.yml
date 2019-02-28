@@ -3,6 +3,10 @@ jobs:
   cypress/run:
     docker:
       - image: cypress/base:10
+      environment:
+       ## this enables colors in the output
+       TERM: xterm
+    working_directory: ~/app   
     parallelism: 1
     steps:
     - checkout
@@ -27,8 +31,19 @@ jobs:
     - attach_workspace:
         at: ~/
     - run:
-        name: Run Cypress tests
-        command: npm test
+        name: Running E2E tests with JUnit reporter
+        command: npm run test-junit
+    - store_test_results:
+       path: junit-results
+    - run:
+       name: Running E2E tests with multiple reporters
+       command: npm run test-multiple
+    - store_test_results:
+       path: multiple-results
+    - store_artifacts:
+       path: cypress/videos
+    - store_artifacts:
+       path: cypress/screenshots
 workflows:
   build:
     jobs:
