@@ -3,8 +3,6 @@ jobs:
   cypress/run:
     docker:
       - image: cypress/base:10
-      environment:
-       ## this enables colors in the output
        TERM: xterm
     working_directory: ~/app   
     parallelism: 1
