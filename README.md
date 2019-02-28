@@ -99,3 +99,5 @@ npm run test-aw
 - https://onesoftwaretester.wordpress.com/2018/10/02/cypress-and-mochawesome/
 - https://deliciousbrains.com/cypress-testing/
 - https://github.com/cypress-io/cypress-example-docker-circle
+- http://lance.bio/2018/04/08/cypress-io-data-list-processing/
+- https://angularfirebase.com/lessons/cypress-angular-testing-end-to-end/
