@@ -21,12 +21,12 @@ jobs:
         - ~/.npm
         - ~/.cache
     - run:
-        name: Running E2E tests with JUnit reporter
-        command: npm run test-junit
+        name: Running E2E tests with HTML reporter
+        command: npm run test-aw
     - store_test_results:
-       path: junit-results
+       path: mochawesome-report
     - store_artifacts:
-       path: junit-results
+       path: mochawesome-report
     - store_artifacts:
        path: src/app/cypress/videos
     - store_artifacts:

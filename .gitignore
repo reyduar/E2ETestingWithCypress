@@ -5,6 +5,8 @@
 /tmp
 /out-tsc
 *.xml
+/mochawesome-report
+/src/app/cypress/videos/
  
 # dependencies
 /node_modules

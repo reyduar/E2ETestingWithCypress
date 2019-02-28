@@ -6,5 +6,6 @@
   "screenshotsFolder": "src/app/cypress/screenshots",
   "videosFolder": "src/app/cypress/videos",
   "supportFile": "src/app/cypress/support/index.js",
-  "projectId": "52hqt8"
+  "projectId": "52hqt8",
+  "reporter": "mochawesome"
 }

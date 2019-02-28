@@ -1,4 +1,5 @@
 {
     "projectId": "52hqt8",
-    "baseUrl": "https://sacademico-app.herokuapp.com/#!/login"
+    "baseUrl": "https://sacademico-app.herokuapp.com/#!/login",
+    "reporter": "mochawesome"
 }
