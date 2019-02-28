@@ -23,12 +23,12 @@ jobs:
     - run:
         name: Running E2E tests with JUnit reporter
         command: npm run test-junit
-    - store_artifacts:
+    - store_test_results:
        path: /junit-results
     - store_artifacts:
-       path: cypress/videos
+       path: app/cypress/videos
     - store_artifacts:
-       path: cypress/screenshots
+       path: app/cypress/screenshots
 workflows:
   build:
     jobs:
