@@ -1,4 +1,4 @@
-# End-to-End Testing with Cypress
+# End-to-End Testing with Cypress on Circle CI
 
 ## Author
 
@@ -25,6 +25,8 @@ Then, in your user settings, make sure you enable formatting on save:
 - [Cypress](https://www.cypress.io/) version 3.1.5.
 - [Node](https://nodejs.org/en/) version 10.15.1.
 - [Npm](https://www.npmjs.com/) version 6.4.1.
+- [Mocha](https://mochajs.org/) version 5.2.0
+- [Mochawesome](https://github.com/adamgruber/mochawesome) version 3.1.1
 
 ## Setup
 
@@ -71,3 +73,17 @@ npm test
 ```
 npm run cy:run -- --spec "src/app/cypress/integration/login/login.spec.js"
 ```
+
+## Running tests and generate Mochawesome report results
+
+```
+npm run test-aw
+```
+
+## Circleci project
+
+- [Project Setup](https://circleci.com/gh/reyduar/E2ETestingWithCypress)
+
+- [Report output](https://18-172927535-gh.circle-artifacts.com/0/root/app/mochawesome-report/mochawesome.html)
+
+- Videos output [Login](https://18-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/videos/login/login.spec.js.mp4) [Home](https://18-172927535-gh.circle-artifacts.com/0/root/app/src/app/cypress/videos/home/home.spec.js.mp4)
