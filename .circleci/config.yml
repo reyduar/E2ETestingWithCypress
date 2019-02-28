@@ -26,9 +26,9 @@ jobs:
     - store_test_results:
        path: /junit-results
     - store_artifacts:
-       path: app/cypress/videos
+       path: cypress/videos/login
     - store_artifacts:
-       path: app/cypress/screenshots
+       path: cypress/screenshots
 workflows:
   build:
     jobs:
