@@ -3,7 +3,6 @@ jobs:
   cypress/run:
     docker:
       - image: cypress/base:10
-       TERM: xterm
     working_directory: ~/app   
     parallelism: 1
     steps:
